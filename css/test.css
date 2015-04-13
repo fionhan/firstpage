@@ -1,0 +1,17 @@
+.box-div{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border:40px solid yellow;
+    background-color: red;
+}
+.position-center{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 50%;
+    margin-bottom: -50px;
+}

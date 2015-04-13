@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/test.css" rel="stylesheet"/>
+    <title>test</title>
+
+</head>
+<body>
+   <div class="box-div">
+       盒模型测试
+   </div>
+<div class="position-center">
+    垂直水平居中的div
+</div>
+   <script>
+       function Student(name,id){
+           this.name=name;
+           this.id=id;
+       }
+       var array=[];
+       var stu=new Student("a","11");
+       array.push(stu);
+       stu=new Student("b","12");
+       array.push(stu);
+       stu=new Student("c","13");
+       array.push(stu);
+       console.log("-----------forEach测试-----------")
+       array.forEach(function (e) {
+           console.log(e.name + "   "+e.id);
+       });
+       console.log("-------结论：经测试，chrome和IE11下功能正常--------");
+       console.log("----------for in 测试---------------");
+       for(var test in array){
+           console.log(test);
+           console.log(test.name + "   "+test.id);
+           console.log(array[test].name +"  "+array[test].id);
+       }
+       console.log("------结论：for in 只能取到数组的索引，并不能访问到元素的属性和方法---------");
+   </script>
+</body>
+</html>
